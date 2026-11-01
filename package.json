@@ -1,0 +1,25 @@
+{
+  "name": "hse-schedule-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram-бот расписания для группы ВПИ 26 (HSE)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts",
+    "verify": "tsx src/scripts/verify.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/core": "^10.4.15",
+    "@nestjs/schedule": "^4.1.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

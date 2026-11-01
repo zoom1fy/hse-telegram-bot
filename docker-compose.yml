@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - TZ=Europe/Moscow
+      - STORE_PATH=/data/subscribers.json
+    volumes:
+      - ./data:/data
