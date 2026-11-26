@@ -25,7 +25,7 @@ const MONTHS_RU = [
   'декабря',
 ];
 
-const SEPARATOR = '────────────────────';
+const SEPARATOR = '────────────';
 
 export function mskTodayIso(): string {
   const formatter = new Intl.DateTimeFormat('ru-RU', {
